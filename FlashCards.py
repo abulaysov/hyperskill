@@ -31,7 +31,7 @@ class FlashCards:
         else:
             print(f'''Can't remove "{rmcard}": there is no such card.''')
 
-    def importt(self):
+    def import_(self):
         import_card = {}
         impcard = input('File name:\n')
         if impcard not in os.listdir():
@@ -69,10 +69,19 @@ class FlashCards:
                     break
             if count == askcard:
                 break
+    
+    def log(self):
+        pass
+
+    def hardest_card(self):
+        pass
+    
+    def reset_stats(self):
+        pass
 
 
 obj = FlashCards()
-command = input('Input the action (add, remove, import, export, ask, exit):\n')
+command = input('Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):\n')
 
 while command != 'exit':
     if command == 'add':
@@ -80,12 +89,12 @@ while command != 'exit':
     elif command == 'remove':
         obj.remove()
     elif command == 'import':
-        obj.importt()
+        obj.import_()
     elif command == 'export':
         obj.export()
     elif command == 'ask':
         obj.ask()
-    command = input('Input the action (add, remove, import, export, ask, exit):\n')
+    command = input('Input the action (add, remove, import, export, ask, exit, log, hardest card, reset stats):\n')
 else:
     print('Bye bye')
 
