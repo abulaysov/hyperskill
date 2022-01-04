@@ -1,4 +1,8 @@
-import socket, argparse, time, json, string
+import socket
+import argparse
+import time
+import json
+import string
 
 parser = argparse.ArgumentParser()
 parser.add_argument('hostname')
