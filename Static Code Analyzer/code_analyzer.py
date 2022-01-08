@@ -135,9 +135,9 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('path')
     args = parser.parse_args()
+    counter = 0
     if args.path[-3:] != '.py':
         path = sorted([i for i in os.listdir(args.path) if i[-3:] == '.py'])
-        counter = 0
         open_file(path)
     else:
         open_file([args.path])
