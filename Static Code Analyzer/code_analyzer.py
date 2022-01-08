@@ -48,10 +48,10 @@ def s006(line, cod):
 
 def s007(line, cod):
     if line[1].startswith('class'):
-        if re.match(r'class [\S]+:$', line[1]) is None:
+        if not re.match(r'class [\S]+:$', line[1]):
             print(f'{cod}: Line {line[0]}: S007 Too many spaces after class')
     elif line[1].startswith('def'):
-        if re.match(r'def [\S]+', line[1]) is None:
+        if not re.match(r'def [\S]+', line[1]):
             print(f'{cod}: Line {line[0]}: S007 Too many spaces after def')
 
 
@@ -68,7 +68,7 @@ def s009(line, cod):
     if line[1].lstrip().startswith('def'):
         templ_def = re.match(r'def[\s]{1,10}[a-z0-9_]+_?[a-z0-9_]+$', line[1][line[1].find('d'):line[1].find('(')])
         name = line[1][line[1].find('f') + 1:line[1].find('(')].strip()
-        if templ_def is None:
+        if not templ_def:
             print(f"{cod}: Line {line[0]}: S009 Function name '{name}' should use snake_case")
 
 
@@ -79,7 +79,7 @@ def s010(line, cod, file):
         for node in ast.walk(tree):
             if isinstance(node, ast.FunctionDef) and node.name == name_funct:
                 for argument in node.args.args:
-                    if re.match(r'[a-z0-9_]+$', argument.arg) is None:
+                    if not re.match(r'[a-z0-9_]+$', argument.arg):
                         print(f"{cod}: Line {line[0]}: S010 Argument name '{argument.arg}' should be snake_case")
         s011(line, cod, file, name_funct)
 
