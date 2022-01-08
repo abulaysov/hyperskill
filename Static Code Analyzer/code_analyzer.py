@@ -17,9 +17,8 @@ def s002(line, cod):
 
 def s003(line, cod):
     if line[1] != '':
-        if ';' in line[1] and '#' in line[1]:
-            if ';' in line[1][:line[1].find('#')]:
-                print(f'{cod}: Line {line[0]}: S003 Unnecessary semicolon after a statement.')
+        if ';' in line[1] and '#' in line[1] and ';' in line[1][:line[1].find('#')]:
+            print(f'{cod}: Line {line[0]}: S003 Unnecessary semicolon after a statement.')
         elif ';' in line[1] and line[1][-1] == ';':
             print(f'{cod}: Line {line[0]}: S003 Unnecessary semicolon after a statement.')
 
@@ -50,9 +49,8 @@ def s007(line, cod):
     if line[1].startswith('class'):
         if not re.match(r'class [\S]+:$', line[1]):
             print(f'{cod}: Line {line[0]}: S007 Too many spaces after class')
-    elif line[1].startswith('def'):
-        if not re.match(r'def [\S]+', line[1]):
-            print(f'{cod}: Line {line[0]}: S007 Too many spaces after def')
+    elif line[1].startswith('def') and not re.match(r'def [\S]+', line[1]):
+        print(f'{cod}: Line {line[0]}: S007 Too many spaces after def')
 
 
 def s008(line, cod):
@@ -81,11 +79,10 @@ def s010(line, cod, file):
                 for argument in node.args.args:
                     if not re.match(r'[a-z0-9_]+$', argument.arg):
                         print(f"{cod}: Line {line[0]}: S010 Argument name '{argument.arg}' should be snake_case")
-        s011(line, cod, file, name_funct)
+        s011(line, cod, file, name_funct, tree)
 
 
-def s011(line, cod, file, name_funct):
-    tree = ast.parse(file)
+def s011(line, cod, file, name_funct, tree):
     for node in ast.walk(tree):
         if isinstance(node, ast.FunctionDef) and node.name == name_funct:
             for variable in node.body:
@@ -93,11 +90,10 @@ def s011(line, cod, file, name_funct):
                     ver = ast.dump(variable.targets[0]).split("'")[1]
                     if not re.match(r'[a-z0-9_]+', ver):
                         print(f"{cod}: Line {variable.lineno}: S011 Variable '{ver}' in function should be snake_case")
-    s012(line, cod, file, name_funct)
+    s012(line, cod, name_funct, tree)
 
 
-def s012(line, cod, file, name_funct):
-    tree = ast.parse(file)
+def s012(line, cod, name_funct, tree):
     for node in ast.walk(tree):
         if isinstance(node, ast.FunctionDef) and node.name == name_funct:
             for argument in node.args.defaults:
