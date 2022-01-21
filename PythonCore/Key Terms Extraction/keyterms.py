@@ -17,10 +17,7 @@ def lematizer(text):
     for i in text:
         result.append(obj.lemmatize(i))
     for i in result:
-        if i in stop_words:
-            while i in result:
-                result.remove(i)
-        elif i in punct:
+        if i in stop_words or i in punct:
             while i in result:
                 result.remove(i)
     new_result = []
