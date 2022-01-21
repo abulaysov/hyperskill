@@ -60,7 +60,7 @@ def vectorizarot(dataset, terms):
             d[key] = value
         tokens = sorted_(d)
         result.append(tokens)
-    return {terms[i]: result[i] for i in range(10)}
+    return {key: value for key, value in zip(terms, result)}
 
 
 def main(file_xml):
