@@ -16,7 +16,6 @@ memory = 0.0
 
 
 def valid(x, y):
-    global memory
     if x == 'M' and y == 'M':
         return memory, memory
     elif x == 'M':
