@@ -1,5 +1,6 @@
 import random
 import itertools
+import re
 
 domino = [[0, 0], [1, 1], [2, 2], [3, 3], [4, 4], [5, 5], [6, 6]]
 for i in itertools.combinations([0, 1, 2, 3, 4, 5, 6], 2):
@@ -44,23 +45,22 @@ while True:
     player, computer = distribution()
     max_player = list(filter(lambda x: x[0] == x[1], player))
     max_computer = list(filter(lambda x: x[0] == x[1], computer))
-    first = {}
     if any(max_player) and any(max_computer):
         if max(max_player) > max(max_computer):
             snake = player.pop(player.index(max(max_player)))
-            first = False
+            human= False
             break
         else:
             snake = computer.pop(computer.index(max(max_computer)))
-            first = True
+            human = True
             break
     elif any(max_player):
         snake = player.pop(player.index(max(max_player)))
-        first = False
+        human = False
         break
     elif any(max_computer):
         snake = computer.pop(computer.index(max(max_computer)))
-        first = True
+        human = True
         break
     else:
         distribution(player + computer)
@@ -87,7 +87,7 @@ while True:
         print("Status: The game is over. It's a draw!")
         break
 
-    if first:
+    if human:
         print("\nStatus: It's your turn to make a move. Enter your command.")
         figures = input()
         while True:
@@ -124,7 +124,7 @@ while True:
                 snake.append(dmn)
             else:
                 snake.append(dmn[::-1])
-        first = False
+        human = False
     else:
         input("\nStatus: Computer is about to make a move. Press Enter to continue...\n")
         figures = intelligence(snake, computer)
@@ -146,4 +146,4 @@ while True:
         else:
             if len(domino) != 0:
                 computer.append(domino.pop(domino.index(random.choice(domino))))
-        first = True
+        human = True
