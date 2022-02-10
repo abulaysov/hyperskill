@@ -9,8 +9,7 @@ def file_check():
     print('Size sorting option:\n1. Descending\n2. Ascending\n')
     sorting = input('Enter a sorting option:\n')
     while sorting not in '21':
-        print('Wrong option\n')
-        sorting = input('Enter a sorting option:\n')
+        sorting = input('Wrong option\nEnter a sorting option:\n')
 
     if any(form):
         for root, dirs, files in os.walk(arg[1]):
@@ -52,7 +51,7 @@ def check_duplicate(d, sorting):
     result = {}
     x = 1
     ret_result = []
-    
+
     for i in d:
         for j in d[i]:
             key = (i, hash_(j))
