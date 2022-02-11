@@ -8,41 +8,29 @@ def print_table():
     print('---------')
 
 
+
 def win():
     winner = ''
-    if l[0][0] == 'X' and l[0][1] == 'X' and l[0][2] == 'X':
-        winner += 'X'
-    elif l[1][0] == 'X' and l[1][1] == 'X' and l[1][2] == 'X':
-        winner += 'X'
-    elif l[2][0] == 'X' and l[2][1] == 'X' and l[2][2] == 'X':
-        winner += 'X'
-    elif l[0][0] == 'X' and l[1][0] == 'X' and l[2][0] == 'X':
-        winner += 'X'
-    elif l[0][1] == 'X' and l[1][1] == 'X' and l[2][1] == 'X':
-        winner += 'X'
-    elif l[0][2] == 'X' and l[1][2] == 'X' and l[2][2] == 'X':
-        winner += 'X'
-    elif l[0][0] == 'X' and l[1][1] == 'X' and l[2][2] == 'X':
-        winner += 'X'
-    elif l[2][0] == 'X' and l[1][1] == 'X' and l[0][2] == 'X':
+    if (table[0][0] == 'X' and table[0][1] == 'X' and table[0][2] == 'X') or\
+            (table[1][0] == 'X' and table[1][1] == 'X' and table[1][2] == 'X') or\
+            (table[2][0] == 'X' and table[2][1] == 'X' and table[2][2] == 'X') or\
+            (table[0][0] == 'X' and table[1][0] == 'X' and table[2][0] == 'X') or\
+            (table[0][1] == 'X' and table[1][1] == 'X' and table[2][1] == 'X') or\
+            (table[0][2] == 'X' and table[1][2] == 'X' and table[2][2] == 'X') or\
+            (table[0][0] == 'X' and table[1][1] == 'X' and table[2][2] == 'X') or \
+            (table[2][0] == 'X' and table[1][1] == 'X' and table[0][2] == 'X'):
         winner += 'X'
 
-    if l[0][0] == 'O' and l[0][1] == 'O' and l[0][2] == 'O':
+    if (table[0][0] == 'O' and table[0][1] == 'O' and table[0][2] == 'O') or\
+            (table[1][0] == 'O' and table[1][1] == 'O' and table[1][2] == 'O') or\
+            (table[2][0] == 'O' and table[2][1] == 'O' and table[2][2] == 'O') or\
+            (table[0][0] == 'O' and table[1][0] == 'O' and table[2][0] == 'O') or\
+            (table[0][1] == 'O' and table[1][1] == 'O' and table[2][1] == 'O') or\
+            (table[0][2] == 'O' and table[1][2] == 'O' and table[2][2] == 'O') or\
+            (table[0][0] == 'O' and table[1][1] == 'O' and table[2][2] == 'O') or \
+            (table[2][0] == 'O' and table[1][1] == 'O' and table[0][2] == 'O'):
         winner += 'O'
-    elif l[1][0] == 'O' and l[1][1] == 'O' and l[1][2] == 'O':
-        winner += 'O'
-    elif l[2][0] == 'O' and l[2][1] == 'O' and l[2][2] == 'O':
-        winner += 'O'
-    elif l[0][0] == 'O' and l[1][0] == 'O' and l[2][0] == 'O':
-        winner += 'O'
-    elif l[0][1] == 'O' and l[1][1] == 'O' and l[2][1] == 'O':
-        winner += 'O'
-    elif l[0][2] == 'O' and l[1][2] == 'O' and l[2][2] == 'O':
-        winner += 'O'
-    elif l[0][0] == 'O' and l[1][1] == 'O' and l[2][2] == 'O':
-        winner += 'O'
-    elif l[2][0] == 'O' and l[1][1] == 'O' and l[0][2] == 'O':
-        winner += 'O'
+
     return winner
 
 
