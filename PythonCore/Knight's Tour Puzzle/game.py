@@ -1,4 +1,4 @@
-def data_processing(len_x, len_y):
+def correct_coordinates(len_x, len_y):
     x1, y1 = 0, 0
     while True:
         position = input("Enter the knight's starting position: ").split()
@@ -17,7 +17,7 @@ def data_processing(len_x, len_y):
     return x1, y1
 
 
-def input_dimension():
+def correct_board():
     len_x1, len_y1 = 0, 0
     while True:
         dimension = input("Enter your board dimensions: ").split()
@@ -160,9 +160,9 @@ def print_solution(board1, len_x, len_y):
 
 
 def main():
-    len_x, len_y = input_dimension()
+    len_x, len_y = correct_board()
     create_board(len_x, len_y)
-    x, y = data_processing(len_x, len_y)
+    x, y = correct_coordinates(len_x, len_y)
     board[x - 1][y - 1] = "X"
     while True:
         inp = input('Do you want to try the puzzle? (y/n): ')
