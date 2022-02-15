@@ -78,7 +78,7 @@ _______________________________
 _______________________________
   ## `Django Developer`
 * ### Challenging
-  - [***Hypercar Service Center**]()
+  - [***Hypercar Service Center***]()
   - [***HyperNews portal***]()
   - [***HyperJob Agency***]()
 * ### Hard
