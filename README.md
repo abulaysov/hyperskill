@@ -68,10 +68,10 @@ _______________________________
   - [***Hangman***](PythonCore/Hangman/hangman.py)
   - [***Knight's Tour Puzzle***](PythonCore/Knight's%20Tour%20Puzzle/game.py)
   - [***Rock-Paper-Scissors***](PythonCore/Rock-Paper-Scissors/rockpaperscissors.py)
+  - [***Generating Randomness***](NaturalLanguageProcessing/Generating%20Randomness/predicator.py)
   - [***Bill Splitter***](PythonCore/Bill%20Splitter/splitter.py)
 
 * ### Easy
-  - [***Generating Randomness***]()
   - [***Simple Chatty Bot***](PythonCore/Simple%20Chatty%20Bot/chatty_bot.py)
   - [***Honest Calculator***](PythonCore/Honest%20Calculator/honest.py)
   - [***Zookeeper***](PythonCore/Zookeeper/zoop.py)
