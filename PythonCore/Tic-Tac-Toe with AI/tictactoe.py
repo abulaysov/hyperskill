@@ -170,19 +170,19 @@ def hard(symbol, sym2):
 
 
 if __name__ == '__main__':
-    levels = {'easy': easy, 'medium': medium, 'hard': hard}
-    command = input('Input command: ')
-    while command != 'exit':
-        if re.match(r'start (hard|easy|user|medium) (hard|easy|user|medium)$', str(command)):
-	    table = [[' ' for j in range(3)] for i in range(3)]
-	    print_table()
-	    command = command.split()
-	    if 'user' not in command:
-	        comp_comp('X', 'O', levels[command[1]], levels[command[2]])
-	    elif command[1] == 'user':
-	        player_comp('X', 'O', levels[command[2]])
-	    else:
-	        player_comp('O', 'X', levels[command[1]])
-        else:
-	    print('Bad parameters! ')
-        command = input('Input command: ')
+	levels = {'easy': easy, 'medium': medium, 'hard': hard}
+	command = input('Input command: ')
+	while command != 'exit':
+		if re.match(r'start (hard|easy|user|medium) (hard|easy|user|medium)$', str(command)):
+			table = [[' ' for j in range(3)] for i in range(3)]
+			print_table()
+			command = command.split()
+			if 'user' not in command:
+				comp_comp('X', 'O', levels[command[1]], levels[command[2]])
+			elif command[1] == 'user':
+				player_comp('X', 'O', levels[command[2]])
+			else:
+				player_comp('O', 'X', levels[command[1]])
+		else:
+			print('Bad parameters! ')
+		command = input('Input command: ')
