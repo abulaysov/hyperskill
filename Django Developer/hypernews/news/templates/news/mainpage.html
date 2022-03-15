@@ -1,0 +1,23 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+<h2>Hyper news</h2>
+
+<form>{% csrf_token %}
+  <input name="q">
+  <button type="submit">Search</button>
+</form>
+
+{% for r in data.date.values %}
+    {% for i in r %}
+        {% if i.created %}
+    <h4>{{ i.created }}</h4>
+    <ul>
+        {% endif %}
+      <li><a href="/news/{{ i.link }}/">{{ i.title }}</a></li>
+    {% endfor %}
+    </ul>
+{% endfor %}
+
+
+<a href="/news/create/">Create</a>
