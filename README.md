@@ -79,8 +79,8 @@ _______________________________
   ## `Django Developer`
 * ### Challenging
   - [***Hypercar Service Center***](Django%20Developer/hypercar)
-  - [***HyperNews portal***](Django Developer/hyperjob)
-  - [***HyperJob Agency***](Django Developer/hypernews)
+  - [***HyperNews portal***](Django%20Developer/hyperjob)
+  - [***HyperJob Agency***](Django%20Developer/hypernews)
 * ### Hard
   - [***Text-Based Browser***](PythonCore/Text-Based%20Browser/browser.py)
   - [***Multilingual Online Translator***](PythonCore/Multilingual%20Online%20Translator/translator.py)
