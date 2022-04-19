@@ -59,7 +59,7 @@ _______________________________
 * ### Hard
   - [***University Admission Procedure***](PythonCore/University%20Admission%20Procedure/admission.py)
   - [***Web Scraper***](PythonCore/Web%20Scraper/scraper.py)
-  - [***Data Analyses for Hospital***]()
+  - [***Data Analyses for Hospital***](NaturalLanguageProcessing/Data%20Analys%20for%20Hospital)
 * ### Medium
   - [***Simple Tic-Tac-Toe***](PythonCore/Simple%20Tic-Tac-Toe/tictac.py)
   - [***Arithmetic Exam Application***](PythonCore/Arithmetic%20Exam%20Application/arithmetic.py)
@@ -123,7 +123,7 @@ _______________________________
   - [***Linear Regression from Scratch***](Flask%20Developer/Web%20Calendar)
   - [***Classification of Handwritten Digits***](Flask%20Developer/Web%20Calendar)
 * ### Hard
-  - [***Data Analysis for Hospitals***](Flask%20Developer/Memorization%20Tool)
+  - [***Data Analysis for Hospitals***](NaturalLanguageProcessing/Data%20Analys%20for%20Hospital)
 * ### Medium
   - [***Dominoes***](PythonCore/Dominoes/dominoes.py)
   - [***Coffee Machine***](PythonCore/Coffee%20Machine/machine.py)
