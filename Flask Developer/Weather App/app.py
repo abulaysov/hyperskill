@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, flash
+from flask import Flask, render_template, request, get_flashed_messages, redirect, flash
 import sys
 import requests
 from flask_sqlalchemy import SQLAlchemy
