@@ -6,6 +6,7 @@ _____________________
 ### 3. [*Natural Language Processing*](#Natural-Language-Processing)
 ### 4. [*Django Developer*](#Django-Developer)
 ### 5. [*Flask Developer*](#Flask-Developer)
+### 6. [*Introductory Machine Learning in Pythonr*](#Introductory-Machine-Learning-in-Python)
 _____________________
 ## `Python for Beginners`
 * ### Challenging
@@ -99,7 +100,6 @@ _______________________________
 
   ## `Flask Developer`
 * ### Challenging
-  
   - [***Weather app***](Flask%20Developer/Weather%20App)
   - [***Web Calendar***](Flask%20Developer/Web%20Calendar)
 * ### Hard
@@ -114,3 +114,20 @@ _______________________________
   - [***Honest Calculator***](PythonCore/Honest%20Calculator/honest.py)
   - [***Zookeeper***](PythonCore/Zookeeper/zoop.py)
   - [***Loan Calculator***](PythonCore/Loan%20Calculator/loancalculator.py)
+
+_______________________________
+
+  ## `Introductory Machine Learning in Python`
+* ### Challenging
+  - [***Logistic Regression from Scratch***](Flask%20Developer/Weather%20App)
+  - [***Linear Regression from Scratch***](Flask%20Developer/Web%20Calendar)
+  - [***Classification of Handwritten Digits***](Flask%20Developer/Web%20Calendar)
+* ### Hard
+  - [***Data Analysis for Hospitals***](Flask%20Developer/Memorization%20Tool)
+* ### Medium
+  - [***Dominoes***](PythonCore/Dominoes/dominoes.py)
+  - [***Coffee Machine***](PythonCore/Coffee%20Machine/machine.py)
+* ### Easy
+  - [***Simple Chatty Bot***](PythonCore/Simple%20Chatty%20Bot/chatty_bot.py)
+  - [***Zookeeper***](PythonCore/Zookeeper/zoop.py)
+  - [***Generating Randomness***](PythonCore/Zookeeper/zoop.py)
