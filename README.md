@@ -130,4 +130,4 @@ _______________________________
 * ### Easy
   - [***Simple Chatty Bot***](PythonCore/Simple%20Chatty%20Bot/chatty_bot.py)
   - [***Zookeeper***](PythonCore/Zookeeper/zoop.py)
-  - [***Generating Randomness***](PythonCore/Zookeeper/zoop.py)
+  - [***Generating Randomness***](NaturalLanguageProcessing/Generating%20Randomness)
