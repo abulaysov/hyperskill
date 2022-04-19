@@ -123,7 +123,7 @@ _______________________________
   - [***Linear Regression from Scratch***](Flask%20Developer/Web%20Calendar)
   - [***Classification of Handwritten Digits***](Flask%20Developer/Web%20Calendar)
 * ### Hard
-  - [***Data Analysis for Hospitals ***](Flask%20Developer/Memorization%20Tool)
+  - [***Data Analysis for Hospitals***](Flask%20Developer/Memorization%20Tool)
 * ### Medium
   - [***Dominoes***](PythonCore/Dominoes/dominoes.py)
   - [***Coffee Machine***](PythonCore/Coffee%20Machine/machine.py)
