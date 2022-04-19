@@ -119,7 +119,7 @@ _______________________________
 
   ## `Introductory Machine Learning in Python`
 * ### Challenging
-  - [***Logistic Regression from Scratch***](Flask%20Developer/Weather%20App)
+  - [***Logistic Regression from Scratch***](Introductory%20Machine%20Learning%20in%20Python/Linear%20Regression%20from%20Scratch/regression.py)
   - [***Linear Regression from Scratch***](Flask%20Developer/Web%20Calendar)
   - [***Classification of Handwritten Digits***](Flask%20Developer/Web%20Calendar)
 * ### Hard
