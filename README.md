@@ -78,9 +78,9 @@ _______________________________
 _______________________________
   ## `Django Developer`
 * ### Challenging
-  - [***Hypercar Service Center***]()
-  - [***HyperNews portal***]()
-  - [***HyperJob Agency***]()
+  - [***Hypercar Service Center***](Django%20Developer/hypercar)
+  - [***HyperNews portal***](Django%20Developer/hypernews)
+  - [***HyperJob Agency***](Django%20Developer/hyperjob)
 * ### Hard
   - [***Text-Based Browser***](PythonCore/Text-Based%20Browser/browser.py)
   - [***Multilingual Online Translator***](PythonCore/Multilingual%20Online%20Translator/translator.py)
@@ -96,3 +96,21 @@ _______________________________
   - [***Honest Calculator***](PythonCore/Honest%20Calculator/honest.py)
   - [***Zookeeper***](PythonCore/Zookeeper/zoop.py)
 _______________________________
+
+  ## `Flask Developer`
+* ### Challenging
+  
+  - [***Weather app***](Flask%20Developer/Weather%20App)
+  - [***Web Calendar***](Flask%20Developer/Web%20Calendar)
+* ### Hard
+  - [***Memorization Tool***](Flask%20Developer/Memorization%20Tool)
+* ### Medium
+  - [***Bill Splitter***](PythonCore/Bill%20Splitter/splitter.py)
+  - [***Coffee Machine***](PythonCore/Coffee%20Machine/machine.py)
+  - [***Arithmetic Exam Application***](PythonCore/Arithmetic%20Exam%20Application/arithmetic.py)
+* ### Easy
+  - [***Simple Chatty Bot***](PythonCore/Simple%20Chatty%20Bot/chatty_bot.py)
+  - [***Currency Converter***](PythonCore/Currency%20Converter/converter.py)
+  - [***Honest Calculator***](PythonCore/Honest%20Calculator/honest.py)
+  - [***Zookeeper***](PythonCore/Zookeeper/zoop.py)
+  - [***Loan Calculator***](PythonCore/Loan%20Calculator/loancalculator.py)
