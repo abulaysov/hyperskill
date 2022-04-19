@@ -120,8 +120,8 @@ _______________________________
   ## `Introductory Machine Learning in Python`
 * ### Challenging
   - [***Logistic Regression from Scratch***](Introductory%20Machine%20Learning%20in%20Python/Linear%20Regression%20from%20Scratch/regression.py)
-  - [***Linear Regression from Scratch***](Flask%20Developer/Web%20Calendar)
-  - [***Classification of Handwritten Digits***](Flask%20Developer/Web%20Calendar)
+  - [***Linear Regression from Scratch***]()
+  - [***Classification of Handwritten Digits***]()
 * ### Hard
   - [***Data Analysis for Hospitals***](NaturalLanguageProcessing/Data%20Analys%20for%20Hospital)
 * ### Medium
