@@ -6,7 +6,7 @@ _____________________
 ### 3. [*Natural Language Processing*](#Natural-Language-Processing)
 ### 4. [*Django Developer*](#Django-Developer)
 ### 5. [*Flask Developer*](#Flask-Developer)
-### 6. [*Introductory Machine Learning in Pythonr*](#Introductory-Machine-Learning-in-Python)
+### 6. [*Introductory Machine Learning in Python*](#Introductory-Machine-Learning-in-Python)
 _____________________
 ## `Python for Beginners`
 * ### Challenging
@@ -59,7 +59,7 @@ _______________________________
 * ### Hard
   - [***University Admission Procedure***](PythonCore/University%20Admission%20Procedure/admission.py)
   - [***Web Scraper***](PythonCore/Web%20Scraper/scraper.py)
-  - [***Data Analyses for Hospital***]()
+  - [***Data Analyses for Hospital***](NaturalLanguageProcessing/Data%20Analys%20for%20Hospital)
 * ### Medium
   - [***Simple Tic-Tac-Toe***](PythonCore/Simple%20Tic-Tac-Toe/tictac.py)
   - [***Arithmetic Exam Application***](PythonCore/Arithmetic%20Exam%20Application/arithmetic.py)
@@ -119,15 +119,15 @@ _______________________________
 
   ## `Introductory Machine Learning in Python`
 * ### Challenging
-  - [***Logistic Regression from Scratch***](Flask%20Developer/Weather%20App)
-  - [***Linear Regression from Scratch***](Flask%20Developer/Web%20Calendar)
-  - [***Classification of Handwritten Digits***](Flask%20Developer/Web%20Calendar)
+  - [***Logistic Regression from Scratch***](Introductory%20Machine%20Learning%20in%20Python/Linear%20Regression%20from%20Scratch/regression.py)
+  - [***Linear Regression from Scratch***]()
+  - [***Classification of Handwritten Digits***]()
 * ### Hard
-  - [***Data Analysis for Hospitals***](Flask%20Developer/Memorization%20Tool)
+  - [***Data Analysis for Hospitals***](NaturalLanguageProcessing/Data%20Analys%20for%20Hospital)
 * ### Medium
   - [***Dominoes***](PythonCore/Dominoes/dominoes.py)
   - [***Coffee Machine***](PythonCore/Coffee%20Machine/machine.py)
 * ### Easy
   - [***Simple Chatty Bot***](PythonCore/Simple%20Chatty%20Bot/chatty_bot.py)
   - [***Zookeeper***](PythonCore/Zookeeper/zoop.py)
-  - [***Generating Randomness***](PythonCore/Zookeeper/zoop.py)
+  - [***Generating Randomness***](NaturalLanguageProcessing/Generating%20Randomness)
